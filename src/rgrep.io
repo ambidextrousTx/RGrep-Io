@@ -12,3 +12,6 @@ second := System args at(2)
 
 (first findSeq (second) != nil) ifTrue("Found the second argument in the first one" println)
 (second findSeq (first) != nil) ifTrue("Found the first argument in the second one" println)
+
+options := System getOptions(System args)
+options println
